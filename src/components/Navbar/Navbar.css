@@ -1,0 +1,140 @@
+.nav__header{
+   border: 1px solid darkblue;
+    padding: 1rem;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+    background-color: rgba(244, 255, 255,0.25);
+    backdrop-filter: blur(4px);
+   -webkit-backdrop-filter: blur(4px);
+   border:1px solid rgba(255,255,255,0.18) ;
+   position: fixed;
+   z-index: 2;
+    
+   
+}
+.navBar__profile{
+    display: flex;
+    align-items: center;
+    color: rgb(98, 94, 94);
+    
+}
+.nav__img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.nav_nav{
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+    right: 20%;
+}
+.nav__ul{
+    display: flex;
+    align-items: center;
+    
+
+}
+.nav__li{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(98, 94, 94);
+    
+    
+}
+a:hover{
+    color: rgb(10, 49, 241);
+    transition: all 0.3s ease-in-out;
+}
+.app__navbar-menu{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(25, 91, 189);
+    position: relative;
+    left: 50px;
+    display: flex;
+    align-items: center;
+}
+.app__navbar-menu svg{
+    width: 70%;
+    height: 70%;
+    color: white;
+    margin-left: 0.25rem;
+}
+.app__navbar-menu div{
+    position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+        padding: 1rem;
+        width: 80%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        background-color: rgb(184, 226, 226);
+}
+.app__navbar-menu div svg{
+    width: 35px;
+    height: 35px;
+    color: #125fa3;
+    margin: 0.5rem 1rem;
+}
+.app__navbar-menu div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start ;
+    flex-direction: column;
+}
+.app__navbar-menu div ul li{
+    margin: 1rem;
+}
+.app__navbar-menu div ul li a{
+    color:#6b7688;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+                    
+}
+.app__navbar-menu div ul li a:hover{
+    transition: all 0.3s ease-in-out;
+    color: rgb(37, 37, 157);
+}
+
+
+@media screen and (max-width:900px) {
+    .nav__ul{
+        display: none;
+    }
+    
+}
+@media screen and (min-width:900px) {
+    .app__navbar-menu{
+        display: none;
+    }
+    
+}
